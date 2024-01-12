@@ -1,6 +1,0 @@
-﻿  Source.cpp
-C:\Users\User\Desktop\大學C語言\微積分解密\微積分解密\Source.cpp(19,103): warning C4244: '=': 將 'double' 轉換為 '__int64'，由於類型不同，可能導致資料遺失
-C:\Users\User\Desktop\大學C語言\微積分解密\微積分解密\Source.cpp(22,11): warning C4477: 'printf' : 格式字串 '%lld' 需要 '__int64' 類型的引數，但 variadic 引數 1 的類型為 'int'
-C:\Users\User\Desktop\大學C語言\微積分解密\微積分解密\Source.cpp(22,11): message : 請考慮在格式字串中使用 '%d'
-C:\Users\User\Desktop\大學C語言\微積分解密\微積分解密\Source.cpp(22,11): message : 請考慮在格式字串中使用 '%I32d'
-  微積分解密.vcxproj -> C:\Users\User\Desktop\大學C語言\微積分解密\x64\Debug\微積分解密.exe
