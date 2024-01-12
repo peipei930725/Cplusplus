@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\User\Desktop\大學C語言\arr2\arr2\Source.cpp(14,11): warning C4101: 'p2': 未參考的區域變數
+C:\Users\User\Desktop\大學C語言\arr2\arr2\Source.cpp(22,6): warning C4101: 'v1': 未參考的區域變數
+  arr2.vcxproj -> C:\Users\User\Desktop\大學C語言\arr2\x64\Debug\arr2.exe

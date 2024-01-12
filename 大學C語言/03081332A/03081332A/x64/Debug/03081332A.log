@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\User\Desktop\大學C語言\03081332A\03081332A\Source.cpp(22,20): warning C4244: '引數': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\大學C語言\03081332A\03081332A\Source.cpp(26,22): warning C4244: '引數': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\大學C語言\03081332A\03081332A\Source.cpp(33,22): warning C4244: '引數': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\大學C語言\03081332A\03081332A\Source.cpp(41,20): warning C4244: '引數': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\大學C語言\03081332A\03081332A\Source.cpp(45,22): warning C4244: '引數': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\User\Desktop\大學C語言\03081332A\03081332A\Source.cpp(52,22): warning C4244: '引數': 將 '__int64' 轉換為 'int'，由於類型不同，可能導致資料遺失
+  03081332A.vcxproj -> C:\Users\User\Desktop\大學C語言\03081332A\x64\Debug\03081332A.exe
