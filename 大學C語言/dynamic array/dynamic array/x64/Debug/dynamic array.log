@@ -1,4 +1,0 @@
-﻿  Source.cpp
-C:\Users\User\Desktop\大學C語言\dynamic array\dynamic array\Source.cpp(10,9): warning C4477: 'printf' : 格式字串 '%d' 需要 'int' 類型的引數，但 variadic 引數 1 的類型為 'size_t'
-C:\Users\User\Desktop\大學C語言\dynamic array\dynamic array\Source.cpp(10,9): message : 請考慮在格式字串中使用 '%zd'
-  dynamic array.vcxproj -> C:\Users\User\Desktop\大學C語言\dynamic array\x64\Debug\dynamic array.exe

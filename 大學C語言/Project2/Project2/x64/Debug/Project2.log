@@ -1,8 +1,0 @@
-﻿  Source.cpp
-C:\Users\User\Desktop\大學C語言\Project2\Project2\Source.cpp(26,30): error C2131: 運算式未評估為常數
-C:\Users\User\Desktop\大學C語言\Project2\Project2\Source.cpp(26,21): message : 失敗原因為讀取超出存留期的變數
-C:\Users\User\Desktop\大學C語言\Project2\Project2\Source.cpp(26,21): message : 請參閱 'ring_num' 的用法
-C:\Users\User\Desktop\大學C語言\Project2\Project2\Source.cpp(55,24): error C2131: 運算式未評估為常數
-C:\Users\User\Desktop\大學C語言\Project2\Project2\Source.cpp(55,15): message : 失敗原因為讀取超出存留期的變數
-C:\Users\User\Desktop\大學C語言\Project2\Project2\Source.cpp(55,15): message : 請參閱 'ring_num' 的用法
-C:\Users\User\Desktop\大學C語言\Project2\Project2\Source.cpp(388): fatal  error C1075: '{': 找不到任何相符的語彙基元
