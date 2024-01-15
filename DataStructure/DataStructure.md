@@ -1,3 +1,5 @@
 # 資料結構筆記
 
-## linked-list
+### 演算法:
+
+#### Binary Search
