@@ -26,11 +26,4 @@ int main(){
     std::sort(myvector.begin(), myvector.end(), myobject);
 
     // print out content:
-    std::cout << "myvector contains:";
-    for(std::vector<int>::iterator it = myvector.begin(); it != myvector.end(); ++it){
-        std::cout << ' ' << *it;
-    }
-    std::cout << '\n';
-
-    return 0;
 }
