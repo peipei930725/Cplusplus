@@ -4,22 +4,28 @@
 
 using namespace std;
 
-int main(){
-    vector<int> v={5,3,10,4,7};
-    int min=0;
-
-    for(int i=0;i<v.size();++i){
-        min=i;
-        for(int j=i;j<v.size();++j){
-            if(v[j]<v[min]){
-                min=j;     
+void selection_sort(int *arr,int n){
+    for(int i=0;i<n;++i){
+        int min=i;
+        for(int j=i;j<n;++j){
+            if(arr[j]<arr[min]){
+                min=j;
             }
         }
-        swap(v[min],v[i]);
+        int temp=arr[i];
+        arr[i]=arr[min];
+        arr[min]=temp;
     }
-
-    for(auto i:v){
-        cout<<i<<" ";
-    }
-    return 0;
 }
+
+int main(){
+    int arr[]={1,9,8,5,10,1,6,3};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    selection_sort(arr,n);
+
+    for(int i=0;i<n;++i){
+        cout<<arr[i]<<" ";
+    }
+}
+
