@@ -1,32 +1,41 @@
-#include<algorithm>
-#include<iostream>
 #include<string>
-#include<cmath>
+#include<iostream>
 
 using namespace std;
+// Definition for a binary tree node.
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
 
 class Solution {
 public:
-    int rangeBitwiseAnd(int left, int right) {
-        while (right > left) {
-            right = right & (right - 1);
-            cout<<right<<endl;
+    bool isEvenOddTree(TreeNode* root) {
+        return  TFbool(root,1);
+    }
+    bool TFbool(TreeNode* root,int n){
+        if(root==nullptr) return true;
+        if((root->val)%2!=(n%2)){
+            return false;
         }
-        return right;
+        return TFbool(root->left,n+1) && TFbool(root->right,n+1);
     }
 };
 
 int main(){
     Solution s;
-    cout<<s.rangeBitwiseAnd(1,2147483647)<<endl;
+    TreeNode* root=new TreeNode(1);
+    root->left=new TreeNode(10);
+    root->right=new TreeNode(4);
+    // root->left->left=new TreeNode(3);
+    // root->left->right=new TreeNode(7);
+    // root->right->left=new TreeNode(9);
+    // root->right->right=new TreeNode(5);
+    cout<<s.isEvenOddTree(root);
     return 0;
 }
-
-// Example1:
-// 5~7 maxmium is 100(4)
-// their common bit is 100
-
-//5~7 respective -4
-//1~3 
-
-//2~4 4~8 8~16 16~32
