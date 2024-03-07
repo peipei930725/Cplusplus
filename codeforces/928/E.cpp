@@ -14,7 +14,7 @@ int main(){
 
         int count=0;
         int muti=1;
-        while(count!=n){//1 3 5 7 2 6 10
+        while(count!=n){//1 3 5 7 2 6 10 3 9 15 4
             int num=1;
             while(num*muti<=n){
                 ans1.push_back(num*muti);
