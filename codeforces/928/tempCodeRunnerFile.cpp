@@ -1,2 +1,2 @@
 
-        cin>>a;
+    cout<<t<<endl;

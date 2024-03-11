@@ -1,10 +1,12 @@
 #include<iostream>
+#define t 5
 
 using namespace std;
 
 int main(){
-    int i=INT_MAX;
-    cout<<i+1<<endl;
+    char q;
+    cin>>q;
+    cout<<t<<endl;
 
     return 0;
 }
