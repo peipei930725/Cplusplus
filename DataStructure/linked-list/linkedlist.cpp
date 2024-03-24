@@ -46,7 +46,18 @@ void LinkedList::Clear(){
     }
 }
 void LinkedList::Reverse(){
+    Node *current = first;
+    Node *prev = 0;
+    Node *next = 0;
+    while (current != 0) {
+        next = current->next;//先保存下一個節點
 
+        current->next = prev;//把它斷掉，然後接到prev
+
+        prev = current;
+        current = next;
+    }
+    first = prev;
 }
 // A->B->C->D
 // D->C
