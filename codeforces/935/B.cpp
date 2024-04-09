@@ -20,7 +20,7 @@ int main(){
     while(t--){
         int a,b;
         cin>>a>>b;
-        LCM(a,b)
+        LCM(a,b);
 
     }
     return 0;
