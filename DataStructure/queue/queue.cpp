@@ -38,6 +38,7 @@ bool queue::IsEmpty() {
 void queue::enqueue(int item) {
     if (!IsFull()) {
         rear++;
+        rear=rear%6;
         queuing[rear] = item;
         cout << "Enqueued: " << item << endl;
     } else {
@@ -49,6 +50,7 @@ void queue::dequeue() {
     if (!IsEmpty()) {
         cout << "Dequeued: " << queuing[front] << endl;
         front++;
+        front=front%6;
     } else {
         cout << "Queue is empty! Cannot dequeue." << endl;
     }
