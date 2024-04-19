@@ -1,1 +1,1 @@
-    root->right=new TreeNode(4);
+&
