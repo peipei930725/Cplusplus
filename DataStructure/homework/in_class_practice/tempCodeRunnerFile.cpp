@@ -1,0 +1,2 @@
+
+    chain.InsertNode('f');
