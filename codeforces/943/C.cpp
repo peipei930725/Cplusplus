@@ -6,10 +6,6 @@ int main(){
     int t=0;
     cin>>t;
     while(t--){
-<<<<<<< HEAD
-        
-    }
-=======
         int n=0;
         cin>>n;
         int ans[n];
@@ -33,5 +29,4 @@ int main(){
         }
     }
     return 0;
->>>>>>> 6d42599c73be1b8b0396bea4b6053e98710bacf9
 }
