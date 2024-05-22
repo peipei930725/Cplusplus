@@ -93,16 +93,16 @@ ListNode* reverseLinkedList(ListNode* head) {
     return prev; // 新的頭節點
 }
 
-stringtolink::stringtolink(string num) {
+stringtolink::stringtoarray(string num) {
     head = nullptr;
     ListNode* tail = nullptr;
     int len = num.length();
-    int chunkSize = 16;
+    int chunkSize = 1;
 
     while (len > 0) {
         int start = (len - chunkSize) < 0 ? 0 : (len - chunkSize);
         //18-16=2
-        string chunk (16,'0');
+        string chunk (1,'0');
         int count=0;
         if((len - chunkSize) < 0) count=chunkSize-len;
         for(int i=start;i<len;i++){
