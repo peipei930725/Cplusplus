@@ -26,10 +26,7 @@ BCD64 BCD64::add(BCD64 &num, int &carryout, int &carryin) {
     for(int i = 0; i < 16; ++i) { // 應該確保16位元結果，每個BCD數字4位元組
         int a = bcd & 0x0f;
         int b = num.bcd & 0x0f;
-        sum = a + b + carryin; //最後4個位元相加
-        // cout<<bcd<<" "<<num.bcd<<endl;
-        // cout<<a<<" "<<b<<" "<<carryin<<endl;
-        // cout<<sum<<endl;
+        sum = a + b + carryin;
         if(sum > 15) {
             carryout = 1;
             sum -= 16;
@@ -38,8 +35,6 @@ BCD64 BCD64::add(BCD64 &num, int &carryout, int &carryin) {
         }
 
         result.bcd |= (sum << (i * 4)); // 將加法結果設置到對應位置
-        // cout<<result.bcd<<endl;
-        // 更新進位
         carryin = carryout;
 
         // 右移位準備處理下一組BCD位元

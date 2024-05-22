@@ -1,7 +1,10 @@
-#include<iostream>
-#include "bcd.h"
-
+#include <iostream>
+#include <string>
+#include <fstream>
+#include "bcd.h" // 假設這個檔案包含 BCD64 類別定義
+#include <chrono>
 using namespace std;
+using namespace std::chrono;
 
 BCD64::BCD64() {
     bcd = 0;
@@ -23,10 +26,13 @@ BCD64 BCD64::add(BCD64 &num, int &carryout, int &carryin) {
     BCD64 result;
     unsigned long long sum = 0;
 
-    for(int i = 0; i < 8; ++i) { // 應該確保16位元結果，每個BCD數字4位元組
+    for(int i = 0; i < 16; ++i) { // 應該確保16位元結果，每個BCD數字4位元組
         int a = bcd & 0x0f;
         int b = num.bcd & 0x0f;
-        sum = a + b + carryin; 
+        sum = a + b + carryin; //最後4個位元相加
+        // cout<<bcd<<" "<<num.bcd<<endl;
+        // cout<<a<<" "<<b<<" "<<carryin<<endl;
+        // cout<<sum<<endl;
         if(sum > 15) {
             carryout = 1;
             sum -= 16;
@@ -56,7 +62,7 @@ BCD64 BCD64::sub(BCD64 &num, int &carryout, int &carryin) {
     BCD64 result;
     unsigned long long sum = 0;
 
-    for(int i = 0; i < 8; ++i) { // 應該確保16位元結果，每個BCD數字4位元組
+    for(int i = 0; i < 16; ++i) { // 應該確保16位元結果，每個BCD數字4位元組
         int a = bcd & 0x0f;
         int b = num.bcd & 0x0f;
         // sum = a - b - carryin; //最後4個位元相減
@@ -94,12 +100,12 @@ stringtolink::stringtolink(string num) {
     head = nullptr;
     ListNode* tail = nullptr;
     int len = num.length();
-    int chunkSize = 8;
+    int chunkSize = 16;
 
     while (len > 0) {
         int start = (len - chunkSize) < 0 ? 0 : (len - chunkSize);
         //18-16=2
-        string chunk (8,'0');
+        string chunk (16,'0');
         int count=0;
         if((len - chunkSize) < 0) count=chunkSize-len;
         for(int i=start;i<len;i++){

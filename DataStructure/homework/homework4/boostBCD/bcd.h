@@ -1,7 +1,9 @@
-#include<iostream>
-#include<string>
-
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <chrono>
 using namespace std;
+using namespace std::chrono;
 
 class BCD64 {
     public:
@@ -20,7 +22,7 @@ class BCD64 {
 	friend ostream &operator<<(ostream &sout, BCD64 &num);
 
     //private:
-	int bcd;
+	unsigned long long bcd;
 };
 
 ostream &operator<<(ostream &sout, BCD64 &num) {
@@ -32,7 +34,7 @@ class ListNode {
 public:
     BCD64 obj;
 	ListNode *next;
-	ListNode* reverseLinkedList(ListNode* head);
+	ListNode *reverseLinkedList(ListNode* head);
 
 	ListNode(BCD64 obj) {
 		this->obj = obj;

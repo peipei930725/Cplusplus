@@ -10,15 +10,15 @@ using namespace std::chrono;
 // stringtolink 應該是用來處理從字串轉換為 BCD 類別或鏈結列表的類別
 
 int main(void) {    
-    ifstream file("in1000.txt");   
-    ofstream outfile("output1000.out");     
+    ifstream file("in1000.txt");  
+    ofstream outfile("output1000.out");      
     if (!file) {
         cerr << "Unable to open file in.txt";
         return 1; // 如果檔案無法打開，返回錯誤
     }
     auto start_time = high_resolution_clock::now(); //開始計時
     while(true) {
-                string num1, symbol, num2;
+         string num1, symbol, num2;
 
         getline(file, num1);
         if (num1 == "STOP") { // 判斷是否為停止標誌
@@ -52,7 +52,7 @@ int main(void) {
     auto duration = duration_cast<microseconds>(end_time - start_time);    
     outfile << "Transpose execution time: " << duration.count() << " milliseconds" << endl;
     outfile<<endl;
-
     outfile.close();
+
     return 0;
 }
