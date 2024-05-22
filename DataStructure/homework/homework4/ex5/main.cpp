@@ -10,8 +10,8 @@ using namespace std::chrono;
 // stringtolink 應該是用來處理從字串轉換為 BCD 類別或鏈結列表的類別
 
 int main(void) {    
-    ifstream file("in1000.txt");   
-    ofstream outfile("output1000.out");     
+    ifstream file("in100.txt");   
+    ofstream outfile("output100.out");     
     if (!file) {
         cerr << "Unable to open file in.txt";
         return 1; // 如果檔案無法打開，返回錯誤
